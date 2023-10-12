@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-BoldItalic.ttf">
+            <string>Montserrat-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="MOJ-Hs-Ekc">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gfj-KP-nsw" customClass="MenuViewController" customModule="Academy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="047-Si-GRR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEa-S5-trw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="618"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkR-Uj-HpJ">
+                                        <rect key="frame" x="33" y="100" width="110" height="34"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-BoldItalic" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="МОЇ КАРТИ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="myCardsButtonAction:" destination="gfj-KP-nsw" eventType="touchUpInside" id="puX-l5-VJQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtQ-6D-Zzj">
+                                        <rect key="frame" x="33" y="154" width="92" height="34"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-BoldItalic" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="ТРЕНЕРИ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="coachesButtonAction:" destination="gfj-KP-nsw" eventType="touchUpInside" id="hQl-xi-k2O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDD-GR-yng">
+                                        <rect key="frame" x="33" y="208" width="97" height="34"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-BoldItalic" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="РОЗКЛАД">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scheduleButtonAction:" destination="gfj-KP-nsw" eventType="touchUpInside" id="YJI-FD-95u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNt-7P-uVW">
+                                        <rect key="frame" x="33" y="262" width="108" height="34"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-BoldItalic" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="КОНТАКТИ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactsButtonAction:" destination="gfj-KP-nsw" eventType="touchUpInside" id="ENO-Cv-Bl8"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qA3-Tl-5a2">
+                                        <rect key="frame" x="82" y="576" width="250" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A33-tG-98k">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="20"/>
+                                                <state key="normal" title="  " image="facebook"/>
+                                                <connections>
+                                                    <action selector="facebookActionButton:" destination="gfj-KP-nsw" eventType="touchUpInside" id="Htd-B1-uur"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7El-68-5d2">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="20"/>
+                                                <state key="normal" title=" " image="inst"/>
+                                                <connections>
+                                                    <action selector="instagramActionButton:" destination="gfj-KP-nsw" eventType="touchUpInside" id="Qjj-Qb-CHg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Dk5-yJ-dLw"/>
+                                            <constraint firstAttribute="width" constant="250" id="mub-DR-5tP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qtQ-6D-Zzj" firstAttribute="top" secondItem="AkR-Uj-HpJ" secondAttribute="bottom" constant="20" id="6MM-Q0-Q95"/>
+                                    <constraint firstAttribute="bottom" secondItem="qA3-Tl-5a2" secondAttribute="bottom" constant="22" id="GYP-F6-L4Y"/>
+                                    <constraint firstItem="aNt-7P-uVW" firstAttribute="top" secondItem="IDD-GR-yng" secondAttribute="bottom" constant="20" id="O8a-Mr-jOt"/>
+                                    <constraint firstItem="qA3-Tl-5a2" firstAttribute="centerX" secondItem="xEa-S5-trw" secondAttribute="centerX" id="QGW-6v-w3M"/>
+                                    <constraint firstItem="AkR-Uj-HpJ" firstAttribute="leading" secondItem="xEa-S5-trw" secondAttribute="leading" constant="33" id="ZUL-aW-4Az"/>
+                                    <constraint firstItem="AkR-Uj-HpJ" firstAttribute="top" secondItem="xEa-S5-trw" secondAttribute="top" constant="100" id="gfA-od-C0O"/>
+                                    <constraint firstItem="IDD-GR-yng" firstAttribute="top" secondItem="qtQ-6D-Zzj" secondAttribute="bottom" constant="20" id="krc-HT-03v"/>
+                                    <constraint firstItem="IDD-GR-yng" firstAttribute="leading" secondItem="xEa-S5-trw" secondAttribute="leading" constant="33" id="lAB-tG-EaA"/>
+                                    <constraint firstItem="aNt-7P-uVW" firstAttribute="leading" secondItem="xEa-S5-trw" secondAttribute="leading" constant="33" id="o9M-of-hyc"/>
+                                    <constraint firstItem="qtQ-6D-Zzj" firstAttribute="leading" secondItem="xEa-S5-trw" secondAttribute="leading" constant="33" id="yyo-d4-eM4"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4qb-3S-sHD" appends="YES" id="4EU-Zf-gQt"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tfW-Xq-HR2"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xEa-S5-trw" firstAttribute="leading" secondItem="tfW-Xq-HR2" secondAttribute="leading" id="SZ3-Zv-bM9"/>
+                            <constraint firstItem="tfW-Xq-HR2" firstAttribute="trailing" secondItem="xEa-S5-trw" secondAttribute="trailing" id="T3o-1O-EiE"/>
+                            <constraint firstItem="xEa-S5-trw" firstAttribute="top" secondItem="tfW-Xq-HR2" secondAttribute="top" id="dKp-Rp-ayE"/>
+                            <constraint firstItem="tfW-Xq-HR2" firstAttribute="bottom" secondItem="xEa-S5-trw" secondAttribute="bottom" constant="200" id="yFp-17-UCZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4qb-3S-sHD" appends="YES" id="acM-lW-3bV"/>
+                            <outletCollection property="gestureRecognizers" destination="4qb-3S-sHD" appends="YES" id="jzN-PJ-72b"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="contactsButton" destination="aNt-7P-uVW" id="uYU-Ug-vZs"/>
+                        <outlet property="menuView" destination="xEa-S5-trw" id="Yhl-Ly-qXE"/>
+                        <outlet property="myCardsButton" destination="AkR-Uj-HpJ" id="v2e-D1-Wzc"/>
+                        <outlet property="scheduleButton" destination="IDD-GR-yng" id="dzs-dN-RAD"/>
+                        <outlet property="servicesButtoon" destination="AkR-Uj-HpJ" id="GUT-Wb-GTX"/>
+                        <outlet property="trainersButton" destination="qtQ-6D-Zzj" id="m2U-Lc-DbN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJP-Bn-d2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4qb-3S-sHD">
+                    <connections>
+                        <outlet property="delegate" destination="xEa-S5-trw" id="Ib6-iq-mb5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="12" height="20"/>
+        <image name="inst" width="19" height="19"/>
+        <namedColor name="backgroundColor">
+            <color red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="FilterCoachTableViewCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi5-NN-yqi">
+                        <rect key="frame" x="15" y="17.5" width="250" height="22"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-Rm-LfT" customClass="BEMCheckBox" customModule="BEMCheckBox">
+                        <rect key="frame" x="285" y="18.5" width="20" height="20"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="29H-uh-SRN"/>
+                            <constraint firstAttribute="height" constant="20" id="7hk-FW-czM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vu-oD-eKr">
+                        <rect key="frame" x="15" y="56" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KIx-AB-6OW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0vu-oD-eKr" secondAttribute="bottom" id="2JX-jp-pFX"/>
+                    <constraint firstItem="0vu-oD-eKr" firstAttribute="leading" secondItem="Pi5-NN-yqi" secondAttribute="leading" id="92S-pq-0md"/>
+                    <constraint firstAttribute="trailing" secondItem="RE4-Rm-LfT" secondAttribute="trailing" constant="15" id="ALi-P6-XoI"/>
+                    <constraint firstItem="RE4-Rm-LfT" firstAttribute="leading" secondItem="Pi5-NN-yqi" secondAttribute="trailing" constant="20" id="Lnz-Pn-R2A"/>
+                    <constraint firstItem="RE4-Rm-LfT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PMC-gw-Wof"/>
+                    <constraint firstItem="0vu-oD-eKr" firstAttribute="trailing" secondItem="RE4-Rm-LfT" secondAttribute="trailing" id="ceZ-d8-mQ6"/>
+                    <constraint firstItem="Pi5-NN-yqi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pcF-cc-A97"/>
+                    <constraint firstItem="Pi5-NN-yqi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vkN-4A-YUa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBox" destination="RE4-Rm-LfT" id="jNX-G9-fON"/>
+                <outlet property="titleLabel" destination="Pi5-NN-yqi" id="CBM-HT-vxW"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="72.65625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

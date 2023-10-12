@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BEMCheckBox",
+        "repositoryURL": "https://github.com/Boris-Em/BEMCheckBox.git",
+        "state": {
+          "branch": "master",
+          "revision": "a3292ebae9f0c2737b0c90281219dced2ce51ac8",
+          "version": null
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "474f849accae40fe61b5302d9b057dd48ee073ba",
+          "version": "6.5.9"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": "master",
+          "revision": "c874e5ef178a65b6a2b6a04d5981652d4fa95e22",
+          "version": null
+        }
+      },
+      {
+        "package": "MHLoadingButton",
+        "repositoryURL": "https://github.com/twho/loading-buttons-ios.git",
+        "state": {
+          "branch": "master",
+          "revision": "551139b445a2196db748725472986cdb186fba71",
+          "version": null
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": "master",
+          "revision": "2ed400300d2d09beedab097d3ab020c10902b0c5",
+          "version": null
+        }
+      },
+      {
+        "package": "QRSwift",
+        "repositoryURL": "https://github.com/chrisamanse/QRSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "6c23db712f5d34f00abc6007569b1fe8f278341b",
+          "version": "0.4.1"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": "master",
+          "revision": "a81b7367f2c46875f29577e03a60c39cdfad0c8d",
+          "version": null
+        }
+      },
+      {
+        "package": "Stevia",
+        "repositoryURL": "https://github.com/freshOS/Stevia",
+        "state": {
+          "branch": null,
+          "revision": "a32dc3c015fe583080f4947edf795bced9a11108",
+          "version": "5.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

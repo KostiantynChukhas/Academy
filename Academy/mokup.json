@@ -1,0 +1,77 @@
+[
+    {
+        "id": "88d9c171-96ee-5f35-39ef-c37c2128395c",
+        "name": "10 Сплит - Майстер",
+        "client": "88d904d4-8796-5362-0f3a-62955b43db50",
+        "activated": true,
+        "start_date": "2021-12-17T00:00:00.000Z",
+        "end_date": "2022-01-17T00:00:00.000Z",
+        "cancelled": false,
+        "sum": 0.0,
+        "delayed_payments": null,
+        "total_visits": "unlimited",
+        "used_visits": 0.0,
+        "left_visits": 0.0,
+        "discount": {
+            "services": {
+                "88d913de-f08a-7fd1-635b-afae1b1c874c": {
+                    "total_quantity": 10.0000000,
+                    "used_quantity": 0.0000000,
+                    "left_quantity": 10.0000000,
+                    "discount": 100.000
+                }
+            }
+        },
+        "bonus": {}
+    },
+    {
+        "id": "88d9d6e1-9c39-037e-191a-c550546bc042",
+        "name": "Групові тренуваня 1 місяць: Boxing Б.",
+        "client": "88d904d4-8796-5362-0f3a-62955b43db50",
+        "activated": true,
+        "start_date": "2022-01-14T00:00:00.000Z",
+        "end_date": "2022-02-13T00:00:00.000Z",
+        "cancelled": false,
+        "sum": 0.0,
+        "delayed_payments": null,
+        "total_visits": 13.0,
+        "used_visits": 0.0,
+        "left_visits": 13.0,
+        "discount": {
+            "groups": {
+                "88d90580-1834-03e5-45ec-85d0311c2b26": {
+                    "total_quantity": "visits",
+                    "used_quantity": 0.0000000,
+                    "left_quantity": "visits",
+                    "discount": 100.000
+                }
+            }
+        },
+        "bonus": {}
+    },
+    {
+        "id": "88d90bed-8e25-44a7-73ce-dff47a039e98",
+        "name": "Посещение зала 1 месяц",
+        "client": "88d904d4-8796-5362-0f3a-62955b43db50",
+        "activated": true,
+        "start_date": "2021-04-30T00:00:00.000Z",
+        "end_date": "2022-05-30T00:00:00.000Z",
+        "cancelled": false,
+        "sum": 0.0,
+        "delayed_payments": null,
+        "total_visits": "unlimited",
+        "used_visits": 0.0,
+        "left_visits": 0.0,
+        "discount": {
+            "services": {
+                "88d90576-154c-a94f-45ec-85d05f045cb8": {
+                    "total_quantity": 0.0000000,
+                    "used_quantity": 0.0000000,
+                    "left_quantity": 0.0000000,
+                    "discount": 100.000
+                }
+            }
+        },
+        "bonus": {}
+    }
+]

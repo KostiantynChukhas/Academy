@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Filter Coaches View Controller-->
+        <scene sceneID="OSK-of-bLZ">
+            <objects>
+                <viewController storyboardIdentifier="FilterCoachesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ph1-Xv-fIb" customClass="FilterCoachesViewController" customModule="Academy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AKq-Gp-Lcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOy-Qe-kS2">
+                                <rect key="frame" x="15" y="298" width="384" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgAlertFilter" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-OW-G5o">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="300"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r81-cA-v3v" customClass="BMButton" customModule="Academy" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="235" width="354" height="57"/>
+                                        <color key="backgroundColor" name="primaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="Bru-c1-oBa"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="LCC-LQ-PuT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Выбрать">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activityIndicatorColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundcolor">
+                                                <color key="value" name="primaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedButtonAction:" destination="ph1-Xv-fIb" eventType="touchUpInside" id="gja-Ip-o0J"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-EL-X5s">
+                                        <rect key="frame" x="8" y="8" width="368" height="219"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qIG-OW-G5o" secondAttribute="trailing" id="19Y-Se-ptC"/>
+                                    <constraint firstAttribute="bottom" secondItem="r81-cA-v3v" secondAttribute="bottom" constant="8" id="2gc-Is-TQr"/>
+                                    <constraint firstItem="qIG-OW-G5o" firstAttribute="leading" secondItem="ZOy-Qe-kS2" secondAttribute="leading" id="EyX-YR-JR9"/>
+                                    <constraint firstItem="r81-cA-v3v" firstAttribute="top" secondItem="Fku-EL-X5s" secondAttribute="bottom" constant="8" id="Kb3-JE-fTa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fku-EL-X5s" secondAttribute="trailing" constant="8" id="QC6-sK-pFk"/>
+                                    <constraint firstAttribute="bottom" secondItem="qIG-OW-G5o" secondAttribute="bottom" id="VNY-MV-98L"/>
+                                    <constraint firstItem="Fku-EL-X5s" firstAttribute="leading" secondItem="ZOy-Qe-kS2" secondAttribute="leading" constant="8" id="dBj-pO-tcC"/>
+                                    <constraint firstAttribute="height" constant="300" id="fcH-Zb-8gL"/>
+                                    <constraint firstAttribute="trailing" secondItem="r81-cA-v3v" secondAttribute="trailing" constant="15" id="jHN-NS-Rxg"/>
+                                    <constraint firstItem="qIG-OW-G5o" firstAttribute="top" secondItem="ZOy-Qe-kS2" secondAttribute="top" id="oNe-bN-xUW"/>
+                                    <constraint firstItem="r81-cA-v3v" firstAttribute="leading" secondItem="ZOy-Qe-kS2" secondAttribute="leading" constant="15" id="wcE-fZ-Gwq"/>
+                                    <constraint firstItem="Fku-EL-X5s" firstAttribute="top" secondItem="ZOy-Qe-kS2" secondAttribute="top" constant="8" id="wrl-T8-91o"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g9Q-Xq-7Qt"/>
+                        <color key="backgroundColor" white="0.25" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZOy-Qe-kS2" firstAttribute="centerX" secondItem="AKq-Gp-Lcs" secondAttribute="centerX" id="LLA-8c-hA4"/>
+                            <constraint firstItem="ZOy-Qe-kS2" firstAttribute="centerY" secondItem="AKq-Gp-Lcs" secondAttribute="centerY" id="ac1-ak-vs1"/>
+                            <constraint firstItem="g9Q-Xq-7Qt" firstAttribute="trailing" secondItem="ZOy-Qe-kS2" secondAttribute="trailing" constant="15" id="fyx-Fh-PWF"/>
+                            <constraint firstItem="ZOy-Qe-kS2" firstAttribute="leading" secondItem="g9Q-Xq-7Qt" secondAttribute="leading" constant="15" id="pl4-9l-0Tm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedbutton" destination="r81-cA-v3v" id="yPP-3Z-Nyo"/>
+                        <outlet property="tableView" destination="Fku-EL-X5s" id="ocx-tG-Fdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94C-OE-eVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="r81-cA-v3v">
+            <size key="intrinsicContentSize" width="81" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bgAlertFilter" width="345" height="292"/>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.78823529411764703" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Alert View Controller-->
+        <scene sceneID="zFn-NK-EOt">
+            <objects>
+                <viewController storyboardIdentifier="AlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c9y-Ix-qgT" customClass="AlertViewController" customModule="Academy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVy-TK-B8U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZS-ib-MBs">
+                                <rect key="frame" x="30" y="362.5" width="354" height="181.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Помилка" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkE-dT-LMb">
+                                        <rect key="frame" x="30" y="16" width="294" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вибачте. Виникли проблеми із сервером." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-Y6-fHI">
+                                        <rect key="frame" x="30" y="47" width="294" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pEy-0b-0kX">
+                                        <rect key="frame" x="38" y="104.5" width="286" height="57"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM3-cX-ZiJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="57"/>
+                                                <color key="backgroundColor" name="primaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="DCQ-Dr-55o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <state key="normal" title="Ок">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okButtonAction:" destination="c9y-Ix-qgT" eventType="touchUpInside" id="iel-Fy-UC5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pEy-0b-0kX" secondAttribute="bottom" constant="20" id="Fg3-5W-gm5"/>
+                                    <constraint firstItem="CKC-Y6-fHI" firstAttribute="trailing" secondItem="ZkE-dT-LMb" secondAttribute="trailing" id="I8J-rK-65B"/>
+                                    <constraint firstAttribute="trailing" secondItem="pEy-0b-0kX" secondAttribute="trailing" constant="30" id="Omj-Qv-RBp"/>
+                                    <constraint firstItem="ZkE-dT-LMb" firstAttribute="top" secondItem="OZS-ib-MBs" secondAttribute="top" constant="16" id="Ou7-1X-jFK"/>
+                                    <constraint firstItem="ZkE-dT-LMb" firstAttribute="leading" secondItem="OZS-ib-MBs" secondAttribute="leading" constant="30" id="eJz-G4-Jcq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZkE-dT-LMb" secondAttribute="trailing" constant="30" id="jjL-ak-jRb"/>
+                                    <constraint firstItem="CKC-Y6-fHI" firstAttribute="top" secondItem="ZkE-dT-LMb" secondAttribute="bottom" constant="10" id="n2o-kG-iMb"/>
+                                    <constraint firstItem="CKC-Y6-fHI" firstAttribute="leading" secondItem="ZkE-dT-LMb" secondAttribute="leading" id="oqm-AA-ege"/>
+                                    <constraint firstItem="pEy-0b-0kX" firstAttribute="top" secondItem="CKC-Y6-fHI" secondAttribute="bottom" constant="20" id="s06-31-Tya"/>
+                                    <constraint firstItem="pEy-0b-0kX" firstAttribute="leading" secondItem="OZS-ib-MBs" secondAttribute="leadingMargin" constant="30" id="uz6-gz-0ar"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDX-gp-ebx"/>
+                        <color key="backgroundColor" white="1" alpha="0.097345819536423836" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OZS-ib-MBs" firstAttribute="centerX" secondItem="vDX-gp-ebx" secondAttribute="centerX" id="9Hq-Zk-a7Y"/>
+                            <constraint firstItem="OZS-ib-MBs" firstAttribute="leading" secondItem="vDX-gp-ebx" secondAttribute="leading" constant="30" id="VcH-bT-BC9"/>
+                            <constraint firstItem="vDX-gp-ebx" firstAttribute="trailing" secondItem="OZS-ib-MBs" secondAttribute="trailing" constant="30" id="Xmb-5s-98Z"/>
+                            <constraint firstItem="OZS-ib-MBs" firstAttribute="centerY" secondItem="vDX-gp-ebx" secondAttribute="centerY" id="bzd-lV-jGR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="OZS-ib-MBs" id="7Nv-aY-hCW"/>
+                        <outlet property="messageLabel" destination="CKC-Y6-fHI" id="e40-Zs-H93"/>
+                        <outlet property="okButton" destination="GM3-cX-ZiJ" id="TcW-UR-3Hc"/>
+                        <outlet property="titleLabel" destination="ZkE-dT-LMb" id="9A6-4O-XNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVU-LT-bE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.78823529411764703" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
